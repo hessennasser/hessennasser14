@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-size: 16px;
+}
+body{
+    font-family: 'Cairo', sans-serif;
+    font-weight: bold;
+    
+}
+header{
+    width: 100%;
+    height: 80px;
+    background: #000018;
+    position: fixed;
+    z-index: 9999;
+}
+div.logo-name{
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    padding: 0 75px;
+    line-height: 80px;
+    position: absolute;
+    top: -5px;
+    left: -30px;
+}
+/* div.logo-name::before{
+    content: "</>";
+    position: absolute;
+    left: 15px;
+    top: -2px;
+} */
+header ul{
+    float: right;
+    margin: 0 40px;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+}
+header li{
+    display: inline-block;
+    margin-right: 20px;
+    line-height: 80px;
+}
+header a{
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: 0.5s ease;
+}
+.link:hover{
+    background-color: #0093ff;
+    border: 1px solid #5c5e5f;
+    border-radius: 10px;
+    color: black;
+    margin: 10px;
+    border-bottom:5px solid #001fff;
+}
+.caption label{
+    background-color: transparent;
+    width: fit-content;
+    position: absolute;
+    top: 50px;
+    left: 135px;
+    font-size: 10px;
+    line-height: 30px;
+    left: 73px;
+    transition: 0.5s ease;
+}
+.caption label:hover{
+    border-radius: 10px;
+    color: #0093ff;
+}
+section{
+    padding: 100px 200px;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    background: url(111.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.main h2{
+    color: white;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.main h2 span{
+    color: #0093ff;
+    font-size: 2.3em;
+    display: inline-block;
+    margin-top: 10px;
+}
+.main h3{
+    color: white;
+    font-size: 1.7em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.main-button{
+    background-color: #001fff;
+    color: white;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    padding: 0.9375em 2.1875em;
+    border-radius: 10px;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+.main-button:hover{
+    background-color: #09188a;
+    transform: scale(1.2);    
+    border-bottom: 10px solid #ffffff;
+}
+.wrapper .button{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    float: left;
+    margin: 0 5px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-out;
+  }
+  .wrapper .button:hover{
+    width: 200px;
+  }
+  .wrapper .button .icon{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+  }
+  .wrapper .button:nth-child(1):hover .icon{
+    background: #4267B2;
+  }
+  .wrapper .button:nth-child(2):hover .icon{
+    background: #1DA1F2;
+  }
+  .wrapper .button:nth-child(3):hover .icon{
+    background: #E1306C;
+  }
+  .wrapper .button:nth-child(4):hover .icon{
+    background: #333;
+  }
+  .wrapper .button:nth-child(5):hover .icon{
+    background: #ff0000;
+  }
+  .wrapper .button .icon i{
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+  }
+  .wrapper .button:hover .icon i{
+    color: #fff;
+  }
+  .wrapper .button span{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+    transition: all 0.3s ease-out;
+  }
+  .wrapper .button:nth-child(1) span{
+    color: #4267B2;
+  }
+  .wrapper .button:nth-child(2) span{
+    color: #1DA1F2;
+  }
+  .wrapper .button:nth-child(3) span{
+    color: #E1306C;
+  }
+  .wrapper .button:nth-child(4) span{
+    color: #333;
+  }
+  .wrapper .button:nth-child(5) span{
+    color: #ff0000;
+  }
+  .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #001fff;
+    font-size: 2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+  }
+  .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .card{
+    background-color: white;
+    width: 16.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 /15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+  }
+  .card:hover{
+    transform: scale(1.2);
+}
+.icon-cards{
+  color: #001fff;
+  text-align: center;
+  font-size: 5em;
+}
+.info{
+  text-align: center;
+}
+.info h3{
+  color: #001fff;
+  font-size: 1.3em;
+  font-weight: 700;
+  margin: 10px;
+}
+.projects{
+  background-color: #000018;
+}
+.projects .content{
+  margin-top: 30px;
+}
+.projects-card{
+  background-color: white;
+  border: 1px solid white;
+  min-height: 14em;
+  width: 23em;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 20px;
+  transition: 0.7s ease;
+}
+.projects-card:hover{
+  transform: scale(1.1);
+}
+.projects-card:hover .project-img{
+  opacity: 0.9;
+}
+.project-img img{
+  width: 100%;
+}
+.project-info{
+  padding: 1em;
+}
+.project-info .project-category{
+  font-size: 0.8em;
+  color: black;
+}
+.project-info .project-title{
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-top: 10px;
+}
+.more-details{
+  text-decoration: none;
+  color: #001fff;
+  transition: 0.7s ease;
+}
+.more-details:hover{
+  background-color: #0093ff;
+  border: 1px solid #5c5e5f;
+  border-radius: 10px;
+  color: black;
+  border-bottom:5px solid #001fff;
+}
+.contact{
+  min-height: 40vh;
+}
+.contact .icon{
+  font-size: 4.5em;
+}
+.contact .info h3{
+  color: black;
+}
+.contact .info p{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.footer{
+background-color: #000018;
+color: white;
+padding: 2em;
+display: flex;
+justify-content: space-between;
+}
+.footer-title{
+  font-size: 1.3em;
+  font-weight: 600;
+}
+.footer-title span{
+  color: #001fff;
+}
+
+
+.wrapper-two{
+  display: inline-flex;
+  color: #000018;
+  position: relative;
+    left: -4.375em;
+    top: 0.8emm;
+}
+.wrapper-two .icon{
+  margin: 0 20px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper-two .icon a{
+  display: block;
+  height: 60px;
+  width: 60px;
+  background: #fff;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper-two .icon a i{
+  line-height: 60px;
+  font-size: 25px;
+}
+.wrapper-two .icon .tooltip{
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  background: #fff;
+  color: #fff;
+  padding: 10px 18px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 25px;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper-two .icon:hover .tooltip{
+  top: -70px;
+  opacity: 1;
+  pointer-events: auto;
+}
+.icon .tooltip:before{
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: #fff;
+  left: 50%;
+  bottom: -6px;
+  transform: translateX(-50%) rotate(45deg);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon:hover a{
+  color: #fff;
+}
+.wrapper .icon:hover a,
+.wrapper-two .icon:hover .tooltip{
+  text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+}
+.wrapper-two .facebook:hover a,
+.wrapper-two .facebook:hover .tooltip,
+.wrapper-two .facebook:hover .tooltip:before{
+  background: #3B5999;
+}
+.wrapper-two .twitter:hover span,
+.wrapper-two .twitter:hover .tooltip,
+.wrapper-two .twitter:hover .tooltip:before{
+  background: #46C1F6;
+}
+.wrapper-two .instagram:hover span,
+.wrapper-two .instagram:hover .tooltip,
+.wrapper-two .instagram:hover .tooltip:before{
+  background: #e1306c;
+}
+.wrapper-two .github:hover span,
+.wrapper-two .github:hover .tooltip,
+.wrapper-two .github:hover .tooltip:before{
+  background: #333;
+}
+.wrapper-two .youtube:hover span,
+.wrapper-two .youtube:hover .tooltip,
+.wrapper-two .youtube:hover .tooltip:before{
+  background: #DE463B;
+}
+
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: 3px solid #7a7a7a; /* set borders */
+  outline: none; /* Remove outline */
+  background-color: #001fff; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 20px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #a7a7a7; /* Add a dark-grey background on hover */
+}
+
+
+@media (max-width:1023px){
+  header{
+    padding: 12px 20px;
+  }
+  header a{
+    padding-left: 10px;
+  }
+  .title{
+    font-size: 1.8em;
+  }
+  section{
+    padding: 80px 30px;
+  }
+  .main h2{
+    font-size: 1em;
+  }
+  .main h3{
+    font-size: 1.6em;
+  }
+  .content{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width:641px){
+  body{
+    font-size: 12px;
+  }
+  .main h2{
+    font-size: 0.8em;
+  }
+  .main h3{
+    font-size: 1.4em;
+  }
+}
+
+@media (max-width:300ox){
+  body{
+    font-size: 10px;
+  }
+}
