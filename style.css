@@ -247,7 +247,7 @@ section{
 .projects-card{
   background-color: white;
   border: 1px solid white;
-  min-height: 14em;
+  max-height: 18em;
   width: 23em;
   overflow: hidden;
   border-radius: 10px;
