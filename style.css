@@ -484,12 +484,12 @@ justify-content: space-between;
 
 .top{
   position: fixed;
-  bottom: 2rem;
+  bottom: 5rem;
   right: 2rem;
   z-index: 999;
   display: none;
 }
 .top #top-icon{
-  font-size: 2.5rem;
+  font-size: 4rem;
   color: #001fff;
 }
